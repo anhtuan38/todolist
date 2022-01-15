@@ -1,0 +1,53 @@
+.todo-list {
+  display: block;
+  width: 600px;
+  margin: 20px auto;
+  &__group {
+    display: block;
+    width: 100%;
+    h3 {
+      border-bottom: 2px solid #e1e1e1;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    input {
+      display: inline-block;
+      width: 400px;
+      font-size: 14px;
+      padding: 3px 10px;
+      outline: none;
+      border: 1px solid #cccccc;
+      margin-bottom: 30px;
+    }
+  }
+  .btn {
+    display: block;
+    color: #fff;
+    background-color: rgb(106, 111, 117);
+    margin-left: 40%;
+    margin-bottom: 10px;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+  &__list {
+    display: block;
+    padding: 10px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    border-bottom: 1px solid #e1e1e1;
+
+    .edit {
+      color: blue;
+    }
+  }
+}
