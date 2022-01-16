@@ -18,7 +18,7 @@ const taskListReducer = createReducer(initialState, {
     };
   },
 
-  DEL_TASK: (state, action) => {
+  DELETE_TASK: (state, action) => {
     const newTaskList = [...state.taskList];
     newTaskList.splice(action.payload, 1);
     return {
